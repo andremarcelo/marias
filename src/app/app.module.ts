@@ -12,7 +12,9 @@ import { DashboardProductHighligthsComponent } from './widget/dashboard-product-
 import { DashboardCompanyComponent } from './widget/dashboard-company/dashboard-company.component';
 import { AppFooterComponent } from './common/app-footer/app-footer.component';
 import { PhoneFormatPipe } from './pipe/phone-format.pipe';
-
+import { PostsViewComponent } from './view/posts-view/posts-view.component';
+import { TableComponent } from './widget/table/table.component';
+import { PageNotFoundViewComponent } from './view/page-not-found-view/page-not-found-view.component';
 
 const appRoutes: Routes = [
   {
@@ -21,7 +23,8 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   },
   {path: 'dashboard', component: DashboardViewComponent},
-  {path: '**', component: DashboardViewComponent}
+  {path: 'posts', component: PostsViewComponent},
+  {path: '**', component: PageNotFoundViewComponent}
 ];
 
 @NgModule({
@@ -33,7 +36,10 @@ const appRoutes: Routes = [
     DashboardProductHighligthsComponent,
     DashboardCompanyComponent,
     AppFooterComponent,
-    PhoneFormatPipe
+    PhoneFormatPipe,
+    PostsViewComponent,
+    TableComponent,
+    PageNotFoundViewComponent
   ],
   imports: [
     BrowserModule,
