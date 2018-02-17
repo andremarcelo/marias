@@ -11,6 +11,7 @@ import { DashboardCarouselComponent } from './widget/dashboard-carousel/dashboar
 import { DashboardProductHighligthsComponent } from './widget/dashboard-product-highligths/dashboard-product-highligths.component';
 import { DashboardCompanyComponent } from './widget/dashboard-company/dashboard-company.component';
 import { AppFooterComponent } from './common/app-footer/app-footer.component';
+import { PhoneFormatPipe } from './pipe/phone-format.pipe';
 
 
 const appRoutes: Routes = [
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     DashboardCarouselComponent,
     DashboardProductHighligthsComponent,
     DashboardCompanyComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    PhoneFormatPipe
   ],
   imports: [
     BrowserModule,

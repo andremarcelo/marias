@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare let google: any;
 
 @Component({
   selector: 'app-dashboard-company',
@@ -7,8 +6,13 @@ declare let google: any;
   styleUrls: ['./dashboard-company.component.less']
 })
 export class DashboardCompanyComponent implements OnInit {
-  lat = 51.678418;
-  lng = 7.809007;
+  lat = 31.276650;
+  lng = 34.803724;
+
+  companyName = 'Company name';
+  companyAddress = 'downtown 123, Metropolis, USA';
+  companyContactUsEmail = 'contact-us@company.com';
+  companyPhone = '523345215215';
 
   constructor() { }
 
