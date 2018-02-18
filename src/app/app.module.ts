@@ -18,6 +18,10 @@ import {PostsService} from './service/posts.service';
 import {HttpClientModule} from '@angular/common/http';
 import { SizeChangeDirective } from './directive/size-change.directive';
 
+/** Import generic table module */
+import { GenericTableModule } from '@angular-generic-table/core';
+import { PostsTableComponent } from './widget/posts-table/posts-table.component';
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -41,7 +45,8 @@ const appRoutes: Routes = [
     PhoneFormatPipe,
     PostsViewComponent,
     PageNotFoundViewComponent,
-    SizeChangeDirective
+    SizeChangeDirective,
+    PostsTableComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, {useHash: true}),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDIqMECcFxjuaPSc6ItWxh7p0lpdR6XYrE'
-    })
+    }),
+    GenericTableModule
   ],
   providers: [PostsService],
   bootstrap: [AppComponent]
