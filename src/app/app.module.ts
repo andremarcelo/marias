@@ -16,6 +16,7 @@ import { PostsViewComponent } from './view/posts-view/posts-view.component';
 import { PageNotFoundViewComponent } from './view/page-not-found-view/page-not-found-view.component';
 import {PostsService} from './service/posts.service';
 import {HttpClientModule} from '@angular/common/http';
+import { SizeChangeDirective } from './directive/size-change.directive';
 
 const appRoutes: Routes = [
   {
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     AppFooterComponent,
     PhoneFormatPipe,
     PostsViewComponent,
-    PageNotFoundViewComponent
+    PageNotFoundViewComponent,
+    SizeChangeDirective
   ],
   imports: [
     BrowserModule,
