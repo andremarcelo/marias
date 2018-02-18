@@ -13,8 +13,9 @@ import { DashboardCompanyComponent } from './widget/dashboard-company/dashboard-
 import { AppFooterComponent } from './common/app-footer/app-footer.component';
 import { PhoneFormatPipe } from './pipe/phone-format.pipe';
 import { PostsViewComponent } from './view/posts-view/posts-view.component';
-import { TableComponent } from './widget/table/table.component';
 import { PageNotFoundViewComponent } from './view/page-not-found-view/page-not-found-view.component';
+import {PostsService} from './service/posts.service';
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   {
@@ -38,17 +39,17 @@ const appRoutes: Routes = [
     AppFooterComponent,
     PhoneFormatPipe,
     PostsViewComponent,
-    TableComponent,
     PageNotFoundViewComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes, {useHash: true}),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDIqMECcFxjuaPSc6ItWxh7p0lpdR6XYrE'
     })
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
