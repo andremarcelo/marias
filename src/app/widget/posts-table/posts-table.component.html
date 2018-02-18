@@ -1,0 +1,7 @@
+<div *ngIf="configObject">
+  <generic-table #postsTable [gtSettings]="configObject.settings" [gtFields]="configObject.fields" [gtData]="configObject.data"></generic-table>
+  <div class="text-center">
+    <small><gt-table-info class="form-text text-muted mb-2" [genericTable]="postsTable"></gt-table-info></small>
+    <gt-pagination [gtClasses]="'pagination-sm justify-content-center'" [genericTable]="postsTable"></gt-pagination>
+  </div>
+</div>
