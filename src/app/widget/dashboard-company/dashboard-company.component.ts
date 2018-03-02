@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard-company.component.less']
 })
 export class DashboardCompanyComponent implements OnInit {
-  lat = 31.276650;
-  lng = 34.803724;
+  lat = 41.172023;
+  lng = -8.587747;
 
-  companyName = 'Company name';
-  companyAddress = 'downtown 123, Metropolis, USA';
-  companyContactUsEmail = 'contact-us@company.com';
-  companyPhone = '523345215215';
+  companyName = 'Marias Bonitas ';
+  companyAddress = 'Rua de Costa Cabral 1818 4200-216 Porto';
+  companyContactUsEmail = 'mariasbonitas045@gmail.com';
+  companyPhone = '+351 914 903 755';
 
   constructor() { }
 
