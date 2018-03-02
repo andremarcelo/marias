@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('simple-angular5-template App', () => {
+describe('marias-bonitas App', () => {
   let page: AppPage;
 
   beforeEach(() => {
