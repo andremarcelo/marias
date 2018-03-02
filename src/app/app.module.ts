@@ -53,7 +53,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes, {useHash: true}),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDIqMECcFxjuaPSc6ItWxh7p0lpdR6XYrE'
+      apiKey: 'AIzaSyAiEUo72nzYbkv9K1KHZxWsIg2rTXiUXAc'
     }),
     GenericTableModule
   ],
